@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Kelly Bootstrap Template</title>
+  <title>Services - Kelly Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="services-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
@@ -49,10 +49,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -88,22 +88,49 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <!-- Services Section -->
+    <section id="services" class="services section">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Some funny video</p>
+      </div><!-- End Section Title -->
 
-      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Kelly Adams</h2>
-            <p>I'm a professional illustrator from San Francisco</p>
-            <a href="about.html" class="btn-get-started">About Me</a>
-          </div>
+      <div class="container">
+
+        <div class="row gy-4">
+          <section id="services">
+            <h2>My Services</h2>
+            
+            <!-- Insert Video -->
+            <h3>Service Overview Video</h3>
+            <video width="600" controls>
+                <source src="H:\OneDrive - Vilniaus Gedimino technikos universitetas\Script_Programming\lab8\assets\media\7565438-hd_1080_1920_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        
+            <!-- Embed YouTube Video -->
+            <h3>Featured YouTube Video</h3>
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        
+            <!-- Insert Audio -->
+            <h3>Service Introduction Audio</h3>
+            <audio controls>
+                <source src="H:\OneDrive - Vilniaus Gedimino technikos universitetas\Script_Programming\lab8\assets\media\mixkit-bell-notification-933.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        
+
+            </div>
+          </div><!-- End Service Item -->
+
         </div>
+
       </div>
 
-    </section><!-- /Hero Section -->
+    </section><!-- /Services Section -->
 
   </main>
 
