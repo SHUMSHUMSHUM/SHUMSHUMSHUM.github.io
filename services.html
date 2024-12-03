@@ -26,14 +26,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>   
 
-  <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="services-page">
@@ -103,6 +97,35 @@
             <h2>My Services</h2>
             
             <h3>Service Overview Video</h3>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><!-- Integral sign start -->
+              <mo>&#x222b;</mo>  
+                  <mi>D</mi>
+                  <mrow/></msubsup> <!-- Integral sign end-->
+                  <mo>(</mo><mo rspace="0">&#x2207;</mo> <!-- forgot the name, turned over triangle-->
+                  <mo lspace="0" rspace="0.1em">&#xb7;</mo><mi>F</mi><mo>)</mo> <!-- multiplying by F -->
+                  <mi>d</mi><mi>V</mi>
+                  <mo>=</mo><msubsup><mo>&#x222b;</mo> <!-- Integral sign again-->
+                  <mrow><mo>&#x2202;</mo><mi>D</mi></mrow> <!-- Integral slower part -->
+                  <mrow/></msubsup><mi>F</mi><mo>&#xb7;</mo> <!-- multiplying by nds -->
+                  <mi>n</mi><mi>d</mi><mi>S</mi>
+              </math>
+      
+              <svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="45" y="18" width="155" height="45" style="stroke:green;fill:none;">
+                    <animateMotion
+                      path="M0,0 q60,100 100,0 q60,-20 100,0"
+                      begin="0s"
+                      dur="10s"
+                      repeatCount="indefinite" />
+                  </rect>
+                  <text x="50" y="50" style="font-family:Verdana;font-size:32">It's SVG!
+                    <animateMotion
+                      path="M0,0 q60,100 100,0 q60,-20 100,0"
+                      begin="0s"
+                      dur="10s"
+                      repeatCount="indefinite" />
+                </text>
+                </svg>
             <video width="600" controls>
                 <source src="assets/media/7565438-hd_1080_1920_25fps.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -116,6 +139,33 @@
                 <source src="assets/media/mixkit-bell-notification-933.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
+
+            <form id="contactForm">
+              <p><input type="text" id="firstName" placeholder="First Name" required></p>
+              <p><input type="text" id="lastName" placeholder="Last Name" required></p>
+              <p><input type="email" id="email" placeholder="Email Address" required></p>
+              <p><input type="tel" id="phone" placeholder="Phone Number" required></p>
+          
+              <h3>Address</h3>
+              <p><input type="text" id="street" placeholder="Street" required></p>
+              <p><input type="text" id="city" placeholder="City" required></p>
+              <p><input type="text" id="zipCode" placeholder="ZIP Code" required></p>
+              <p><input type="text" id="apartment" placeholder="Apartment (optional)"></p>
+          
+              <p>Rate the following questions from 1 (Strongly Disagree) to 10 (Strongly Agree):</p>
+              <p><label>1. The website is easy to navigate:</label></p>
+              <p><input type="number" id="q1" min="1" max="10" required></p>
+              <p><label>2. The website design is visually appealing:</label></p>
+              <p><input type="number" id="q2" min="1" max="10" required></p>
+              <p><label>3. The content provided is helpful:</label></p>
+              <p><input type="number" id="q3" min="1" max="10" required></p>
+              <p><label>4. I would recommend this website to others:</label></p>
+              <p><input type="number" id="q4" min="1" max="10" required></p>
+              <p><label>5. Overall, I am satisfied with my experience:</label></p>
+              <p><input type="number" id="q5" min="1" max="10" required></p>
+              <p><button type="button" id="submitBtn">Submit</button></p>
+          </form>
+          <div class="output" id="output"></div>          
         </section>
         
 
